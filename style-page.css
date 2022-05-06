@@ -1,15 +1,39 @@
 body {
     background-color: #121212;
 }
+#perfil {
+    border-radius: 20%;
+}
 h1 {
     color: #12B84D;
+    font-family:monospace;
 }
 .topicos {
     color: #489B66;
 }
 .texto {
     color: #88DBA6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .link {
     color: #085C26;
+    text-decoration: none;
+}
+.inform {
+    font-style: italic;
+}
+.criatividade {
+    font-size: 20px;
+}
+.multi-tarefa {
+    font-size: 25px;
+}
+.dedic {
+    font-size: 28px;
+}
+.estudante-trybe {
+    font-size: 23px;
+}
+.paciencia {
+    font-size: 30px;
 }
