@@ -1,39 +1,53 @@
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
+
 #perfil {
-    border-radius: 20%;
+  border-radius: 20%;
 }
+
 h1 {
-    color: #12B84D;
-    font-family:monospace;
+  color: #12B84D;
+  font-family: monospace;
 }
+
 .topicos {
-    color: #489B66;
+  color: #489B66;
 }
+
 .texto {
-    color: #88DBA6;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #88DBA6;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .link {
-    color: #085C26;
-    text-decoration: none;
+  color: #085C26;
+  text-decoration: none;
 }
+
 .inform {
-    font-style: italic;
+  font-style: italic;
 }
+
 .criatividade {
-    font-size: 20px;
+  font-size: 20px;
 }
+
 .multi-tarefa {
-    font-size: 25px;
+  font-size: 25px;
 }
+
 .dedic {
-    font-size: 28px;
+  font-size: 28px;
 }
+
 .estudante-trybe {
-    font-size: 23px;
+  font-size: 23px;
 }
+
 .paciencia {
-    font-size: 30px;
+  font-size: 30px;
+}
+#bio {
+  flex-direction: column;
 }
