@@ -1,9 +1,48 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
 body {
   background-color: #121212;
 }
 
+#top {
+text-align: center;
+margin-top: 10px;
+background-color: rgb(44, 44, 44);
+}
+
+#top h1 {
+  background-color: #121212;
+  padding: 3%;
+}
+
+.info {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: middle;
+  
+}
+
+
 #perfil {
   border-radius: 20%;
+}
+
+.bio {
+  max-width: 40%;
+}
+
+#rs {
+  display: inline-block;
+  
+}
+
+.icone {
+  width: 35px;
+  padding-top: 5px;
+  padding-left: 10px ;
 }
 
 h1 {
@@ -11,13 +50,42 @@ h1 {
   font-family: monospace;
 }
 
-.topicos {
-  color: #489B66;
-}
-
 .texto {
   color: #88DBA6;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.inform {
+  font-style: italic;
+}
+
+#mid1 {
+  margin-top: 30px;
+ 
+}
+
+#qualidades {
+  display: inline-block;
+  margin-left: 15%;
+}
+
+#soft-skill-img {
+  display: inline-block;
+  padding-left: 5%;
+  
+}
+
+#hard-skill-img {
+  display: inline-block;
+  padding-left: 15%;
+  margin-bottom: 5%;
+}
+
+#competencias {
+  display: inline-block;
+  font-size: x-large;
+  padding: 50px;
+  vertical-align: bottom;
 }
 
 .link {
@@ -25,8 +93,8 @@ h1 {
   text-decoration: none;
 }
 
-.inform {
-  font-style: italic;
+.topicos {
+  color: #489B66;
 }
 
 .criatividade {
@@ -48,6 +116,23 @@ h1 {
 .paciencia {
   font-size: 30px;
 }
-#bio {
-  flex-direction: column;
+
+#video {
+  font-size: 17px;
+}
+
+.criatividade:hover, .dedic:hover, .paciencia:hover {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+#footer {
+  margin-top: 5%;
+  background-color: #1b1b1b;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#indice {
+  display: inline-block;
 }
