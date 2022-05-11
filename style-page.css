@@ -7,17 +7,32 @@ body {
   background-color: #121212;
 }
 
-#Bio {
-text-align: center;
-margin-top: 10px;
-background-color: rgb(44, 44, 44);
-}
-
 #header h1 {
   background-color: #121212;
-  padding: 3%;
+  padding: 1%;
   margin-top: 10px;
   text-align: center;
+}
+
+#navegation {
+  display: block;
+  background-color: #1b1b1b;
+  text-align: center;
+}
+
+#navegation ol li {
+  padding: 5px 0;
+  margin: 5px 25px;
+  display: inline-block;
+}
+
+#header ol li:hover {
+  background-color: #085C26;
+  border-radius: 15%;
+}
+
+#navegation ol li a {
+  color: aliceblue;
 }
 
 .info {
@@ -32,9 +47,12 @@ background-color: rgb(44, 44, 44);
   border-radius: 20%;
 }
 
-.bio {
-  max-width: 40%;
-}
+
+#Bio {
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(44, 44, 44);
+  }
 
 #rs {
   display: inline-block;
@@ -130,11 +148,8 @@ h1 {
 
 #footer {
   margin-top: 5%;
+  padding: 5%;
   background-color: #1b1b1b;
   text-align: center;
-  padding-top: 5%;
-}
-
-#indice {
-  display: inline-block;
+  color:#12B84D;
 }
