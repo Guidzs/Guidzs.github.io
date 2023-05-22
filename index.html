@@ -1,90 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" type="text/css" href="/style-page.css">
-</head>
+  <title>Writing to the page</title>
 
-<body>
-  
-  <header id="header">
-    <h1>Guilherme de Sá Brasil Borges</h1>
-    <nav id="navegation">
-        <ol class="texto">
-          <li><a class="link" href="#Foto">Foto</a></li>
-          <li><a class="link" href="#Redes">Redes</a></li>
-          <li><a class="link" href="#Bio">Bio</a></li>
-          <li><a class="link" href="#PQ">Principais Qualidades</a></li>
-          <li><a class="link" href="https://www.betrybe.com/" target="_blank">Trybe</a></li>
-        </ol>
-    </nav>
-  </header>
-  
-  <section id="Bio">
-    <div class="info" id="Foto">
-     <img  src="/Utilizados/FT perfil.jpeg" alt="minha foto de perfil"  width="180px" id="perfil">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+
+  <body>
+    <div id="manual-write"></div>
+    <button py-click="write_to_page()" id="manual">Say Hello</button>
+    <div id="display-write"></div>
+    <button py-click="display_to_div()" id="display">Say Things!</button>
+    <div>
+      <py-terminal>
     </div>
+    <button py-click="print_to_page()" id="print">Print Things!</button>
+    <button py-click="current_time()" id="get-time" class="py-button">Get current time</button>
+    <p id="current-time"></p>
 
-    <article class="info">
-      <h2 class="topicos">Bio</h2>
-      <p class="texto"> Sou iniciante no mundo do desenvolvimento de Softwer    <br>
-        mas já entro com <strong class="inform">muito foco e determinação </strong> <br>
-        recém formado no Ensino Médio tenho <strong class="inform">18 anos</strong> <br>
-        sou <strong class="inform">Brasileiro</strong> e moro em <strong class="inform">Brasília</strong>.
-      </p>
-      <nav id="rs">
-        <h3 class="topicos"     id="Redes">Redes Sociais</h3>
-        
-        <a class="link" href="https://www.linkedin.com/in/guilherme-borges-04b61b213" target="_blank"><img src="Utilizados/linkedin.png" alt="linkedin" class="icone"></a>
-        <a class="link" href="https://github.com/Guidzs" target="_blank"><img src="Utilizados/github.png" alt="github" class="icone"></a>
-        
-      </nav>
-    </article>
-  </section>
-  
-  
-  
-  <main id="mid1">
-    <article>
-      <section id="qualidades">
-        <h3 class="topicos" id="PQ">Principais Qualidades</h3>
-        <ul class="texto">
-          <li class="criatividade">Criatividade</li>
-          <li class="multi-tarefa">Multi Tarefa</li>
-          <li class="dedic">Dedicação</li>
-          <li class="estudante-trybe">Estudante <a class="link" href="https://www.betrybe.com/" target="_blank">Trybe</a></li>
-          <li class="paciencia">Paciência</li>
-        </ul>
-      </section>
-      <div id="soft-skill-img">
-        <img src="Utilizados/hard-skills-soft-skills.webp" alt="yng-yang soft-skills e hard-skills">
-      </div>
-    </article>
-    <article>
-      <div id="hard-skill-img">
-        <img src="Utilizados/skills-development.webp" alt="skills development">
-      </div>
-    
-      <section id="competencias">
-        <h3 class="topicos">Competências</h3>
-        <ul class="texto">
-          <li>Java Script</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li id="video">Edição de video</li>
-        </ul>
-      </section>
-    </article>
-    
-  </main>
-  
-  <footer id="footer" class="texto">
-    <strong> ESSE SITE FOI FEITO INTEIRAMENTE POR GULHERME BORGES</strong>
-  </footer>
+    <py-script>
+    import datetime
 
-</body>
+
+    def write_to_page():
+      manual_div = Element("manual-write")
+      manual_div.element.innerHTML = "<p><b>Hello World</b></p>"
+
+    def display_to_div():
+      display("I display things!", target="display-write")
+
+    def print_to_page():
+      print("I print things!")
+
+
+    def current_time():
+      now = datetime.datetime.now()
+      paragraph = Element("current-time")
+
+      paragraph.write(now.strftime("%Y-%m-%d %H:%M:%S"))
+    </py-script>
+  </body>
 </html>
