@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            /* base-color-site */
+            background-color: #104222;
+            color: #B3B3B3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1DB954;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .nav-link {
+            color: #191414;
+        }
+        .nav-link:hover {
+            color: #282828;
+            background-color: #1ED760;
+            border-radius: 10px;
+            border: #1f8342 solid;
+        }
+
+        .nav-perfil {
+            width: 50px;
+        }
+
+        .main-perfil-photo {
+            width: 300px;
+        }
+
+        main {
+            background-color: #282828;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .list-group-item {
+            background-color: #282828;
+            border-color: #191414;
+            border-style: solid;
+        }
+
+        .licensed-link {
+            color: #1f8342;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container shadow-lg">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/guilherme-borges-19b240262/">Linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/Guidzs">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.betrybe.com">Trybe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.credential.net/profile/guilhermedesbrasilborges544062/wallet#gs.ygtdcc">
+                        Certificados
+                    </a>  
+                </li>
+            </ul>
+            <div>
+                <img src="/Utils/perfil_ligth_green.jpeg" alt="perfil_photo" class="img-fluid rounded-circle nav-perfil">
+            </div>
+        </nav>
+    </header>
+    <main class="container shadow-lg">
+        <div class="container">
+            <section class="row profile-section">
+                <div class="col-md-6">
+                    <img
+                        src="/Utils/perfil_ligth_green.jpeg"
+                        alt="perfil_photo"
+                        class="img-fluid rounded-circle main-perfil-photo"
+                    >
+                    <div>
+                        <h1>Guilherme Borges</h1>
+                        <p>
+                            Desenvolvedor FullStack formado pela Trybe, 19 anos moro em Brasilia
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="">
+                        <h2>Formação</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Trybe - 
+                                <a class="licensed-link" target="_blank" href="https://www.credential.net/6205ac96-b36b-460e-9c16-07110dfe73a5#gs.yjlo0o">
+                                    Fundamentos do Desenvolvimento Web
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                Trybe - 
+                                <a class="licensed-link" target="_blank" href="https://www.credential.net/bc7e366b-bc8b-4771-9c46-e8acccad4d2a#gs.yjm1xh">
+                                    Desenvolvimento Front-end
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                Trybe - 
+                                <a class="licensed-link" target="_blank" href="https://www.credential.net/511c9768-d6f8-40e7-bad0-17a665e1e196#gs.yjm13b">
+                                    Desenvolvimento Back-end
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <h2>Front-end Skils</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">HTML5</li>
+                            <li class="list-group-item">CSS</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">PyScript</li>
+                            <li class="list-group-item">React</li>
+                            <li class="list-group-item">Redux</li>
+                            <li class="list-group-item">Router</li>
+                            <li class="list-group-item">Hooks</li>
+                            <li class="list-group-item">RTL</li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <h2>Back-end Skils</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">Docker</li>
+                            <li class="list-group-item">SQL</li>
+                            <li class="list-group-item">MongoDB</li>
+                            <li class="list-group-item">Node.js</li>
+                            <li class="list-group-item">Express</li>
+                            <li class="list-group-item">TypeScript</li>
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">Rest, APIs e JWT</li>
+                            <li class="list-group-item">Testes com Mocha, Chai e Sinon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
