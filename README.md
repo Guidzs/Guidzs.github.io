@@ -2,7 +2,7 @@
 
 > Meu site pessoal
 
-![Badge](https://guidzs.github.io)
+![Profile](https://guidzs.github.io)
 
 Esse projeto foi feito para ser um portifolio pessoal reunindo todas minhas skils, certificações e contatos.
 
